@@ -1,0 +1,33 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    &__item {
+        position: relative;
+        font-size: 1.25rem;
+        line-height: 1;
+        transition: all 0.3s ease-in-out;
+        padding-bottom: 15px;
+        cursor: pointer;
+        &:hover {
+            color: #d62300;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background: #d62300;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+.categories__item.active {
+    color: #d62300;
+    &::after {
+        width: 100%;
+    }
+}
