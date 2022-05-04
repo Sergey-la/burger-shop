@@ -1,0 +1,58 @@
+{
+   "AllBurgers": [
+      {
+         "id": 0,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/4dc4c4537bf4bcd8f4ec8983421a4a3e.webp",
+         "name": "Стрипс Кинг",
+         "price": 199.99
+      },
+      {
+         "id": 2,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/985b8adaa9b763850790071281f73d11.webp",
+         "name": "Моцарелла Кинг XL Кинг Комбо M",
+         "price": 617.99
+      },
+      {
+         "id": 3,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/ec9e9ff026325424bb14cf3395be1846.webp",
+         "name": "АНГУС Шеф XL",
+         "price": 689.99
+      },
+      {
+         "id": 4,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/b81651f9f9bbba280f3a30ab3f317eb1.webp",
+         "name": "Моцарелла Кинг",
+         "price": 349.99
+      },
+      {
+         "id": 5,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/7baabffde14bc525758c09bfdb4c7ecc.webp",
+         "name": "Двойной Воппер с сыром",
+         "price": 409.99
+      },
+      {
+         "id": 6,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/e28050ed762b146b0650bf2640cc73e0.webp",
+         "name": "Фиш Кинг",
+         "price": 199.99
+      },
+      {
+         "id": 7,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/f9fd73bf8186860c7ce88f83994c692e.webp",
+         "name": "Кинг Бокс 5в1 Шримп Ролл",
+         "price": 469.99
+      },
+      {
+         "id": 8,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/9c0a613da160d37d525f618e3fa795c2.webp",
+         "name": "Кинг Бокс 5в1 Цезарь Ролл со стрипсами",
+         "price": 379.99
+      },
+      {
+         "id": 9,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/efee310b7521ef6d5d2a83a4d6b1f795.webp",
+         "name": "Чикен Чизбургер Кинг Комбо M",
+         "price": 244.99
+      }
+   ]
+}

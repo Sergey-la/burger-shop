@@ -1,8 +1,8 @@
 import './categories.scss';
 import { useState } from 'react';
 
-const Categories = () => {
-    const categoriesData = [
+function Categories({ categoriesData }) {
+    categoriesData = [
         'Бургеры из говядины',
         'Бургеры из курицы и рыбы',
         'Кинг Комбо',
@@ -27,22 +27,24 @@ const Categories = () => {
             >
                 Все бургеры
             </li>
-            {categoriesData.map((item, i) => {
-                return (
-                    <li
-                        onClick={() => onSelectCategory(i)}
-                        className={
-                            activeCategory === i
-                                ? 'categories__item active'
-                                : 'categories__item'
-                        }
-                    >
-                        {item}
-                    </li>
-                );
-            })}
+            {categoriesData &&
+                categoriesData.map((item, i) => {
+                    return (
+                        <li
+                            onClick={() => onSelectCategory(i)}
+                            className={
+                                activeCategory === i
+                                    ? 'categories__item active'
+                                    : 'categories__item'
+                            }
+                            key={`${item}_${i}`}
+                        >
+                            {item}
+                        </li>
+                    );
+                })}
         </ul>
     );
-};
+}
 
 export default Categories;

@@ -1,6 +1,6 @@
 import cart from '../../static/images/cart.svg';
 
-const Cart = () => {
+function Cart() {
     return (
         <a className="cart" href="/">
             <div className="cart__price">

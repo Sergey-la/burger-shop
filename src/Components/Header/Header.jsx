@@ -3,7 +3,7 @@ import logo from '../../static/images/logo.png';
 
 import Cart from './Cart';
 
-const Header = () => {
+function Header() {
     return (
         <header className="header">
             <div className="container">
