@@ -54,5 +54,19 @@
          "name": "Чикен Чизбургер Кинг Комбо M",
          "price": 244.99
       }
+   ],
+   "beef": [
+      {
+         "id": 0,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/ec9e9ff026325424bb14cf3395be1846.webp",
+         "name": "АНГУС Шеф XL",
+         "price": 689.99
+      },
+      {
+         "id": 1,
+         "imageUrl": "https://orderapp-static.burgerkingrus.ru/x256/mobile_image/b81651f9f9bbba280f3a30ab3f317eb1.webp",
+         "name": "Моцарелла Кинг",
+         "price": 349.99
+      }
    ]
 }

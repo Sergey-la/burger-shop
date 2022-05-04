@@ -26,6 +26,9 @@
             transition: all 0.3s ease-in-out;
         }
     }
+    &__item + &__item {
+        margin-left: 10px;
+    }
 }
 .categories__item.active {
     color: #d62300;

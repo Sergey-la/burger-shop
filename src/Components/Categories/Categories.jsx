@@ -16,34 +16,37 @@ function Categories({ categoriesData }) {
     };
 
     return (
-        <ul className="categories container">
-            <li
-                onClick={() => onSelectCategory(null)}
-                className={
-                    activeCategory === null
-                        ? 'categories__item active'
-                        : 'categories__item'
-                }
-            >
-                Все бургеры
-            </li>
-            {categoriesData &&
-                categoriesData.map((item, i) => {
-                    return (
-                        <li
-                            onClick={() => onSelectCategory(i)}
-                            className={
-                                activeCategory === i
-                                    ? 'categories__item active'
-                                    : 'categories__item'
-                            }
-                            key={`${item}_${i}`}
-                        >
-                            {item}
-                        </li>
-                    );
-                })}
-        </ul>
+        <div>
+            <ul className="categories container">
+                <li
+                    onClick={() => onSelectCategory(null)}
+                    className={
+                        activeCategory === null
+                            ? 'categories__item active'
+                            : 'categories__item'
+                    }
+                >
+                    Все бургеры
+                </li>
+                {categoriesData &&
+                    categoriesData.map((item, i) => {
+                        console.log(activeCategory);
+                        return (
+                            <li
+                                onClick={() => onSelectCategory(i)}
+                                className={
+                                    activeCategory === i
+                                        ? 'categories__item active'
+                                        : 'categories__item'
+                                }
+                                key={`${item}_${i}`}
+                            >
+                                {item}
+                            </li>
+                        );
+                    })}
+            </ul>
+        </div>
     );
 }
 

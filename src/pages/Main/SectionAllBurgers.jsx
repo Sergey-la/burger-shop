@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from 'axios';
+
 import './main-page.scss';
 
 import BurgerBlock from './BurgerBlock';
@@ -7,11 +9,9 @@ function SectionAllBurgers() {
     const [burgers, setBurgers] = React.useState([]);
 
     React.useEffect(() => {
-        fetch('http://localhost:3000/db.json')
-            .then((res) => res.json())
-            .then((json) => {
-                setBurgers(json.AllBurgers);
-            });
+        axios.get('http://localhost:3000/db.json').then(({ data }) => {
+            setBurgers(data.AllBurgers);
+        });
     }, []);
 
     return (
@@ -19,16 +19,13 @@ function SectionAllBurgers() {
             <h1>Все бургеры</h1>
             <div className="burgers-list">
                 {burgers.map((item) => (
-                    <BurgerBlock
-                        img={item.imageUrl}
-                        name={item.name}
-                        key={`${item.name}_${item.id}`}
-                        price={item.price}
-                    />
+                    <BurgerBlock {...item} key={`${item.name}_${item.id}`} />
                 ))}
             </div>
         </div>
     );
 }
+
+
 
 export default SectionAllBurgers;
