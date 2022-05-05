@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 
-import './main-page.scss';
+import './burgers.scss';
 
 import BurgerBlock from './BurgerBlock';
 
-function SectionAllBurgers() {
+function Burgers() {
     const [burgers, setBurgers] = React.useState([]);
 
     React.useEffect(() => {
@@ -26,6 +26,4 @@ function SectionAllBurgers() {
     );
 }
 
-
-
-export default SectionAllBurgers;
+export default Burgers;

@@ -1,15 +1,13 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-import { Header, Categories } from './Components';
-import SectionAllBurgers from './pages/Main/SectionAllBurgers';
+import { AppRouter } from './Components';
 
 function App() {
     return (
-        <div>
-            <Header />
-            <Categories />
-            <SectionAllBurgers />
-        </div>
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
     );
 }
 
