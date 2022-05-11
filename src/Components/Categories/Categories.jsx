@@ -16,8 +16,8 @@ function Categories({ categoriesData }) {
     };
 
     return (
-        <div>
-            <ul className="categories container">
+        <div className='categories container'>
+            <ul className="categories-list">
                 <li
                     onClick={() => onSelectCategory(null)}
                     className={
@@ -30,7 +30,6 @@ function Categories({ categoriesData }) {
                 </li>
                 {categoriesData &&
                     categoriesData.map((item, i) => {
-                        console.log(activeCategory);
                         return (
                             <li
                                 onClick={() => onSelectCategory(i)}

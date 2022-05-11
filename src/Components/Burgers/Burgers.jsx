@@ -1,16 +1,25 @@
 import React from 'react';
 import axios from 'axios';
-
-import './burgers.scss';
+import { useSelector, useDispatch } from 'react-redux';
 
 import BurgerBlock from './BurgerBlock';
 
+import { setBurgers } from '../../redux/actions/burgers';
+
+import './burgers.scss';
+
 function Burgers() {
-    const [burgers, setBurgers] = React.useState([]);
+    const dispatch = useDispatch();
+
+    const { items } = useSelector((state) => {
+        return {
+            items: state.burgers.items,
+        };
+    });
 
     React.useEffect(() => {
         axios.get('http://localhost:3000/db.json').then(({ data }) => {
-            setBurgers(data.AllBurgers);
+            dispatch(setBurgers(data.AllBurgers));
         });
     }, []);
 
@@ -18,7 +27,7 @@ function Burgers() {
         <div className="burgers container">
             <h1>Все бургеры</h1>
             <div className="burgers-list">
-                {burgers.map((item) => (
+                {items.map((item) => (
                     <BurgerBlock {...item} key={`${item.name}_${item.id}`} />
                 ))}
             </div>

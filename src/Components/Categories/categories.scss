@@ -1,9 +1,11 @@
 .categories {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 15px;
-    margin-bottom: 50px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
     &__item {
         position: relative;
         font-size: 1.25rem;
